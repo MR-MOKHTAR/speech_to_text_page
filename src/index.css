@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+/* ── CSS Variables ────────────────────────────────────────────────────────── */
+@theme {
+  --color-bg: #050d1a;
+  --color-bg2: #080f1e;
+  --color-card: #0d1629;
+  --color-border: rgba(99, 179, 237, 0.12);
+  --color-teal: #00c9b1;
+  --color-blue: #2563eb;
+  --color-tg: #2aabee;
+  --color-tg-dark: #1c8fc4;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+}
+
+/* ── Animations ───────────────────────────────────────────────────────────── */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+@keyframes badge-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 201, 177, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 201, 177, 0);
+  }
+}
+
+@keyframes blobFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-40px) scale(1.08);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes micGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 40px rgba(0, 201, 177, 0.4),
+      0 0 20px rgba(0, 201, 177, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 70px rgba(0, 201, 177, 0.7),
+      0 0 40px rgba(0, 201, 177, 0.4);
+  }
+}
+
+@keyframes waveBounce {
+  0%,
+  100% {
+    transform: scaleY(0.4);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes cardBreath {
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 8px 40px rgba(0, 201, 177, 0.08),
+      0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ── Base Styles ───────────────────────────────────────────────────────────── */
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background-color: #050d1a;
+  color: #e2e8f0;
+  line-height: 1.7;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
