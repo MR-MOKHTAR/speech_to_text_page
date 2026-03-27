@@ -56,8 +56,8 @@ export const steps = [
 ];
 
 export const stats = [
-  { num: 288, suffix: "+", label: "کاربر فعال" },
-  { num: 7800, suffix: "+", label: "ساعت صوت تبدیل شده" },
+  { num: 310, suffix: "+", label: "کاربر فعال" },
+  { num: 8000, suffix: "+", label: "ساعت صوت تبدیل شده" },
   { num: 100, suffix: "٪", label: "دقت تشخیص" },
 ];
 

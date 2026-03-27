@@ -1,5 +1,5 @@
 import React from "react";
-import { MicIcon, TelegramIcon } from "../ui/Icons";
+import { TelegramIcon } from "../ui/Icons";
 import { TELEGRAM_BOT_URL } from "../../constants";
 
 export function Footer() {
